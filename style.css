@@ -1,0 +1,266 @@
+/* ININIO DE ESTILOS GENERALES */
+
+:root {
+    --colorPrimario: #e31a52;
+    --colorSecundario: #282530;
+    --colorGRisTerciario: #676767;
+    --colorFondoPrincipal: #f2f2f2;
+    --colorFondoSecundario: #ebebeb;
+    --alturaNav: 8rem;
+    --marginDesktop: 0rem 5rem;
+    --marginMobile: 0rem 1.5rem;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2 {
+    font-family: "saira", sans-serif;
+    font-weight: 800;
+}
+
+h3, h4, h5 {
+    font-family: "saira", sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: "saira", sans-serif;
+    font-weight: 200;
+
+}
+
+ul li{
+    list-style: none;
+    font-family: "saira", sans-serif;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* FIN DE ESTILOS GENERALES */
+
+/* INICIO DE ESTILOS DE HEADER */
+
+.icons {
+    text-align: center;
+}
+
+#navMobile {
+    display: none;
+}
+
+.containerNav{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    min-height: var(--alturaNav);
+}
+
+.contenNav{
+    margin: var(--marginMobile);    
+    @media (min-width: 992px) {
+        margin: var(--marginDesktop);
+    }
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-nav-Desktop {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    text-align: center;
+}
+
+.navbar-nav-Mobile {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.containerLogo{
+    display: flex;
+    align-items: center;
+}
+
+.containerLogo img{
+    width: 10rem;
+    @media (min-width: 992px){
+        width: 15rem;
+    }
+}
+
+.contenLink{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.links {
+    color: #fff;
+}
+
+.offcanvas{
+    width: 200px !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* FIN DE ESTILOS DE HEADER */
+
+/* INICIO DE BANNER HOME */
+
+.containerBannerHome{
+    min-height: 15rem;
+    background-image: url('./img/banners/bannerHome.jpg');
+    background-size: cover;
+    background-position: center 60%;
+    
+    @media (min-width: 1200px){
+        min-height: 35rem;
+        top: 50%;
+    }
+}
+
+/* FIN DE BANNER HOME */
+
+/* INICIO DE SECCION 1 PC ARMADA */
+
+.containerPCArmadas{
+    margin: var(--marginMobile);    
+    @media (min-width: 992px) {
+        margin: var(--marginDesktop);
+    }
+}
+
+.contenPCArmadas{
+    min-height: 30rem;
+}
+
+/* FIN DE SECION 1 PC ARMADAS */
+
+/* INICIO DE SECCIÓN 2 */
+
+.containerSeccion2{
+    background-color: var(--colorFondoPrincipal);
+    min-height: 30rem;
+}
+
+.contenSeccion2{
+    margin: var(--marginMobile);    
+    @media (min-width: 992px) {
+        margin: var(--marginDesktop);
+    }
+}
+/* FIN DE SECCIÓN 2 */
+
+/* INICIO DE BANNER DIV */
+
+.containerImgDiv{
+    background-image: url('./img/banners/bannerDiv.jpeg');
+    min-height: 8rem;
+    background-position: center 25%;
+    background-size: cover;
+
+    @media (min-width: 992px){
+        min-height: 20rem;
+        top: 50%;
+
+    }
+}
+
+/* FIN DE BANNER DIV */
+
+/* INICIO DE SECCIÓN MULTIMEDIA */
+
+.conaiterMultimedia{
+    background-color: var(--colorFondoPrincipal);
+    min-height: 30rem;
+}
+.conteMultimedia{
+    margin: var(--marginMobile);    
+    @media (min-width: 992px) {
+        margin: var(--marginDesktop);
+    }
+}
+
+/* FIN DE SECCIÓN MULTIMEDIA */
+
+/* INICIO DE DOBLE SECCIÓN PUBLICIDAD Y NEWSLATTER */
+
+.section-fullwidth {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 30rem;
+}
+
+.division {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 992px) {   
+        flex: 1 1 50%;
+    }
+}
+
+.containerPublicidad {
+    background-color: var(--colorPrimario);
+    width: 100%;
+    height: 100%;
+    padding: var(--marginMobile);
+
+    @media (min-width: 992px) {   
+        padding: var(--marginDesktop);
+    }
+}
+
+.containerNewsletter {
+    background-color: var(--colorGRisTerciario);
+    width: 100%;
+    height: 100%;
+    padding: var(--marginMobile);
+
+    @media (min-width: 992px) {   
+        padding: var(--marginDesktop);
+    }
+
+}
+
+/* FIN DE DOBLE SECCIÓN PUBLICIDAD Y NEWSLATTER */
+
+/* INICIO DE FOOTER  */
+
+.containerFooter{
+    background-color: #000;
+    min-height: 20rem;
+    color: #fff;
+    padding: 3rem 0rem;
+}
+.contenFooter{
+    margin: var(--marginMobile);    
+    @media (min-width: 992px) {
+        margin: var(--marginDesktop);
+    }
+}
+
+.containerRedes{
+
+}
+.contenRedes img{
+    width: 3.5rem;
+}
+
+.containerLogoFooter img{
+    width: 15rem;
+}
+/* FIN DE FOOTER  */
