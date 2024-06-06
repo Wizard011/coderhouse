@@ -62,7 +62,7 @@ button {
 }
 .btnPrincipal {
     background-color: #000;
-    border: #e31a52 solid 1px;
+    border: var(--colorPrimario) solid 1px;
     color: #fff;
 }
 
@@ -77,12 +77,15 @@ button {
     transform: scale(1.03);
 }
 .btnPrincipal:hover{
-    background-color: #e31a52;
+    background-color: var(--colorPrimario);
 }
 .btnSecundario:hover{
     background-color: #666;
 }
 
+.txtMagenta{
+    color: var(--colorPrimario);
+}
 /* FIN DE ESTILOS GENERALES */
 
 /* INICIO DE ESTILOS DE HEADER */
@@ -176,7 +179,8 @@ button {
 /* INICIO DE SECCION 1 PC ARMADA */
 
 .containerPCArmadas{
-    margin: var(--marginMobile);    
+    margin: var(--marginMobile);  
+    padding: 4rem 0rem; 
     @media (min-width: 992px) {
         margin: var(--marginDesktop);
     }
@@ -184,6 +188,19 @@ button {
 
 .contenPCArmadas{
     min-height: 30rem;
+    @media (min-width: 992px){
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.card {
+    width: 20rem;
+    margin: 1rem 0rem;
+    @media (min-width: 992px){
+        width: 35rem;
+        margin: 0rem 0.2rem;
+    }
 }
 
 /* FIN DE SECION 1 PC ARMADAS */
@@ -212,6 +229,11 @@ button {
 .containerImgSeccion2 img {
     width: 100%;
 }
+
+.containerTextSeccion2 {
+    margin: auto;
+}
+
 /* FIN DE SECCIÓN 2 */
 
 /* INICIO DE BANNER DIV */
@@ -235,12 +257,22 @@ button {
 .conaiterMultimedia{
     background-color: var(--colorFondoPrincipal);
     min-height: 30rem;
+    padding: 3rem 0rem;
 }
 .conteMultimedia{
     margin: var(--marginMobile);    
     @media (min-width: 992px) {
         margin: var(--marginDesktop);
     }
+}
+
+.containerVideo {
+    width: 80%;
+}
+
+.containerVideo iframe {
+    width: 100%;
+    height: 100%;
 }
 
 /* FIN DE SECCIÓN MULTIMEDIA */
