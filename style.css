@@ -41,6 +41,48 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
+/* ////////////////////// BOTONES ////////////////////// */
+
+button {
+    font-weight: 200;
+}
+
+.btnPrincipal, .btnSecundario{
+    border-radius: 20px;
+    letter-spacing: 3px;
+    margin: 5px 0px;
+    padding: 10px 35px;
+    width: 100%;
+    transition: all 500ms;
+}
+.btnSecundario{
+    background-color: #999;
+    border: #000 solid 0px;
+    color: #fff;
+}
+.btnPrincipal {
+    background-color: #000;
+    border: #e31a52 solid 1px;
+    color: #fff;
+}
+
+.btnPrincipal a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* BTONES OVER */
+.btnPrincipal:hover, .btnSecundario:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.btnPrincipal:hover{
+    background-color: #e31a52;
+}
+.btnSecundario:hover{
+    background-color: #666;
+}
+
 /* FIN DE ESTILOS GENERALES */
 
 /* INICIO DE ESTILOS DE HEADER */
@@ -151,13 +193,24 @@ a:link, a:visited, a:active {
 .containerSeccion2{
     background-color: var(--colorFondoPrincipal);
     min-height: 30rem;
+    padding: 3rem 0rem;
 }
 
 .contenSeccion2{
-    margin: var(--marginMobile);    
+    margin: var(--marginMobile);
+    text-align: center; 
     @media (min-width: 992px) {
         margin: var(--marginDesktop);
     }
+}
+
+.containerImgSeccion2{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.containerImgSeccion2 img {
+    width: 100%;
 }
 /* FIN DE SECCIÓN 2 */
 
@@ -172,7 +225,6 @@ a:link, a:visited, a:active {
     @media (min-width: 992px){
         min-height: 20rem;
         top: 50%;
-
     }
 }
 
@@ -236,6 +288,18 @@ a:link, a:visited, a:active {
 
 }
 
+.contenNewslatter{
+    margin: 3rem 0rem;
+}
+.contenNewslatter h3, h4{
+    margin: 1rem 0rem;
+}
+.contenNewslatter form {
+    margin: 2rem 0rem;
+}
+.contenNewslatter button {
+    margin: 1rem 0rem;
+}
 /* FIN DE DOBLE SECCIÓN PUBLICIDAD Y NEWSLATTER */
 
 /* INICIO DE FOOTER  */
