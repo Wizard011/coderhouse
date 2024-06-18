@@ -341,6 +341,7 @@ button {
     min-height: 20rem;
     color: #fff;
     padding: 3rem 0rem;
+    text-align: center;
 }
 .contenFooter{
     margin: var(--marginMobile);    
