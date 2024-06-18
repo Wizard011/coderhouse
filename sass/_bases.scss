@@ -1,0 +1,42 @@
+/* ININIO DE ESTILOS GENERALES */
+
+$colorPrimario: #e31a52;
+$colorSecundario: #282530;
+$colorGRisTerciario: #676767;
+$colorFondoPrincipal: #f2f2f2;
+$colorFondoSecundario: #ebebeb;
+$alturaNav: 8rem;
+$marginDesktop: 0rem 5rem;
+$marginMobile: 0rem 1.5rem;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2 {
+    font-family: "saira", sans-serif;
+    font-weight: 800;
+}
+
+h3, h4, h5 {
+    font-family: "saira", sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: "saira", sans-serif;
+    font-weight: 200;
+
+}
+
+ul li{
+    list-style: none;
+    font-family: "saira", sans-serif;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* FIN DE ESTILOS GENERALES */

@@ -1,0 +1,23 @@
+/* INICIO DE FOOTER  */
+
+.containerFooter{
+    background-color: #000;
+    min-height: 20rem;
+    color: #fff;
+    padding: 3rem 0rem;
+    text-align: center;
+}
+.contenFooter{
+    margin: $marginMobile;    
+    @media (min-width: 992px) {
+        margin: $marginDesktop;
+    }
+}
+.contenRedes img{
+    width: 3.5rem;
+}
+
+.containerLogoFooter img{
+    width: 15rem;
+}
+/* FIN DE FOOTER  */

@@ -1,0 +1,48 @@
+/* ////////////////////// BOTONES ////////////////////// */
+
+.button {
+    font-weight: 200;
+    border-radius: 20px;
+    letter-spacing: 3px;
+    margin: 5px 0px;
+    padding: 10px 35px;
+    width: auto;
+    transition: all 500ms;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+}
+
+.btnPrincipal {
+    background-color: #000;
+    border: $colorPrimario solid 1px;
+    color: #fff;
+
+    &:hover {
+        background-color: $colorPrimario;
+    }
+}
+
+.btnSecundario{
+
+    @extend .button;
+
+    background-color: #999;
+    border: #000 solid 0px;
+    color: #fff;
+
+    &:hover {
+        background-color: $colorGRisTerciario;
+    }
+}
+
+.txtMagenta{
+    color: $colorPrimario;
+}
