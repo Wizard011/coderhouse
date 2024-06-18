@@ -1,0 +1,24 @@
+.experience {
+    margin: $marginMobile;
+
+    @media (min-width: 992px) {
+        margin: $marginDesktop;
+    }
+
+    &Title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 3rem;
+        text-align: center;
+    }
+    &Direcction {
+        flex-direction: row-reverse !important;
+    }
+    
+}
+
+.lineDiv {
+    border: 1px solid $colorPrimario;
+    margin: 3rem auto;
+    width: 50%;
+}
