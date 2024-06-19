@@ -27,7 +27,10 @@ a:link, a:visited, a:active {
   font-family: "saira", sans-serif;
   font-weight: 800;
   text-align: center;
-  margin: 3rem 0rem; }
+  margin: 1rem 0rem; }
+  @media (min-width: 992px) {
+    .title {
+      margin: 3rem 0rem; } }
 
 /* FIN DE ESTILOS GENERALES */
 /* ////////////////////// BOTONES ////////////////////// */
@@ -62,6 +65,10 @@ a:link, a:visited, a:active {
 
 .txtMagenta {
   color: #e31a52; }
+
+.cardImg {
+  min-height: 450px;
+  align-content: center; }
 
 /* INICIO DE ESTILOS DE HEADER */
 .icons {
@@ -140,10 +147,11 @@ a:link, a:visited, a:active {
 /* INICIO DE SECCION 1 PC ARMADA */
 .containerPCArmadas {
   margin: 0rem 1.5rem;
-  padding: 4rem 0rem; }
+  padding: 1rem 0rem; }
   @media (min-width: 992px) {
     .containerPCArmadas {
-      margin: 0rem 5rem; } }
+      margin: 0rem 5rem;
+      padding: 3rem 0rem; } }
 
 .contenPCArmadas {
   min-height: 30rem; }
@@ -276,5 +284,51 @@ a:link, a:visited, a:active {
   border: 1px solid #e31a52;
   margin: 3rem auto;
   width: 50%; }
+
+.contact {
+  margin: 0rem 1.5rem;
+  padding: 0rem 0rem 2rem 0rem; }
+  @media (min-width: 992px) {
+    .contact {
+      margin: 0rem 5rem;
+      padding: 5rem 0rem; } }
+  .contactInput {
+    margin: 2rem 0rem; }
+  .contactImg {
+    width: 100%;
+    padding: 2rem; }
+    .contactImg img {
+      width: 100%; }
+
+.novedades {
+  margin: 0rem 1.5rem;
+  padding: 2rem 0rem; }
+  @media (min-width: 992px) {
+    .novedades {
+      margin: 0rem 5rem; } }
+  .novedadesContent {
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    padding: 2rem; }
+  .novedadesTitle {
+    text-align: center; }
+  .novedadesImg {
+    width: 100%;
+    margin: 2rem 0rem; }
+    @media (min-width: 992px) {
+      .novedadesImg {
+        width: 50%;
+        margin: 2rem auto; } }
+    .novedadesImg img {
+      width: 100%; }
+  .novedadesInfo {
+    text-align: justify; }
+
+.nostros {
+  margin: 0rem 1.5rem;
+  padding: 1rem 0rem; }
+  @media (min-width: 992px) {
+    .nostros {
+      margin: 0rem 5rem; } }
 
 /*# sourceMappingURL=style.css.map */

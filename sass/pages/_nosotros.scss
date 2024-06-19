@@ -1,0 +1,8 @@
+.nostros{
+    margin: $marginMobile;
+    padding: 1rem 0rem;
+
+    @media (min-width: 992px) {
+        margin: $marginDesktop;
+    }
+}

@@ -1,0 +1,36 @@
+.novedades {
+    margin: $marginMobile;
+    padding: 2rem 0rem;
+    @media (min-width: 992px){
+        margin: $marginDesktop;
+    }
+
+    &Content {
+        background-color: $colorFondoPrincipal;
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+
+    &Title {
+        text-align: center;
+    }
+
+    &Img {
+        width: 100%;
+        margin: 2rem 0rem;
+
+        @media (min-width: 992px){
+            width: 50%;
+            margin: 2rem auto;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    &Info {
+        text-align: justify;
+        p {
+        }
+    }
+}

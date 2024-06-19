@@ -1,0 +1,21 @@
+.contact {
+    margin: $marginMobile;
+    padding: 0rem 0rem 2rem 0rem;
+
+    @media (min-width: 992px) {
+        margin: $marginDesktop;
+        padding: 5rem 0rem;
+    }
+
+    &Input {
+        margin: 2rem 0rem;
+    }
+
+    &Img {
+        width: 100%;
+        padding: 2rem;;
+        img {
+            width: 100%;
+        }
+    }
+}

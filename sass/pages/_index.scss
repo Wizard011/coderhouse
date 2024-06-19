@@ -18,9 +18,11 @@
 
 .containerPCArmadas{
     margin: $marginMobile;  
-    padding: 4rem 0rem; 
+    padding: 1rem 0rem; 
     @media (min-width: 992px) {
         margin: $marginDesktop;
+        padding: 3rem 0rem; 
+
     }
 }
 
