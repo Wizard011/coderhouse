@@ -147,9 +147,13 @@ a:link, a:visited, a:active {
 /* INICIO DE SECCION 1 PC ARMADA */
 .containerPCArmadas {
   margin: 0rem 1.5rem;
-  padding: 1rem 0rem; }
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   @media (min-width: 992px) {
     .containerPCArmadas {
+      display: block;
       margin: 0rem 5rem;
       padding: 3rem 0rem; } }
 
@@ -205,22 +209,33 @@ a:link, a:visited, a:active {
 
 /* FIN DE BANNER DIV */
 /* INICIO DE SECCIÓN MULTIMEDIA */
-.conaiterMultimedia {
+.multimedia {
   background-color: #f2f2f2;
   min-height: 30rem;
-  padding: 3rem 0rem; }
-
-.conteMultimedia {
-  margin: 0rem 1.5rem; }
-  @media (min-width: 992px) {
-    .conteMultimedia {
-      margin: 0rem 5rem; } }
-
-.containerVideo {
-  width: 80%; }
-  .containerVideo iframe {
+  padding: 4rem 0rem;
+  text-align: center; }
+  .multimediaContent {
+    margin: 0rem 1.5rem; }
+    @media (min-width: 992px) {
+      .multimediaContent {
+        margin: 0rem 5rem;
+        padding: 3rem 0rem; } }
+  .multimediaVideo {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    margin: 2rem 0rem; }
+    @media (min-width: 992px) {
+      .multimediaVideo {
+        width: 850px;
+        height: 450px; } }
+    .multimediaVideo iframe {
+      width: 100%;
+      height: 100%; }
+  .multimediaText {
+    margin-top: 4rem; }
+    @media (min-width: 992px) {
+      .multimediaText {
+        margin-top: 6rem; } }
 
 /* FIN DE SECCIÓN MULTIMEDIA */
 /* INICIO DE DOBLE SECCIÓN PUBLICIDAD Y NEWSLATTER */
