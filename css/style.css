@@ -135,7 +135,7 @@ a:link, a:visited, a:active {
 /* INICIO DE BANNER HOME */
 .containerBannerHome {
   min-height: 15rem;
-  background-image: url("../../img/banners/bannerHome.jpg");
+  background-image: url("../img/banners/bannerHome.jpg");
   background-size: cover;
   background-position: center 60%; }
   @media (min-width: 1200px) {
@@ -198,7 +198,7 @@ a:link, a:visited, a:active {
 /* FIN DE SECCIÓN 2 */
 /* INICIO DE BANNER DIV */
 .containerImgDiv {
-  background-image: url("../../img/banners/bannerDiv.jpeg");
+  background-image: url("../img/banners/bannerDiv.jpeg");
   min-height: 8rem;
   background-position: center 25%;
   background-size: cover; }
