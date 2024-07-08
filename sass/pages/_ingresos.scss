@@ -1,0 +1,52 @@
+.logoDesplazamientoMobile{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    //background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 1s forwards 1s;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.containerIngresos {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards 1.5s;
+    margin: $marginMobile;  
+    padding: 1rem 0rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (min-width: 992px) {
+        opacity: 1;
+        display: block;
+        margin: $marginDesktop;
+        padding: 3rem 0rem; 
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

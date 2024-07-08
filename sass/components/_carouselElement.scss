@@ -1,0 +1,38 @@
+.carouselElement{
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+
+    
+    &Container {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &Card {
+        min-width: 100%;
+        text-align: center;
+        transition: transform 0.3s;
+        margin-right: 3rem;
+    
+        @media (min-width: 992px){
+            min-width: auto;
+            margin-right: 1rem;
+        }
+        
+        .card {
+            @media (min-width: 992px){
+                width: 100% !important;
+            }
+        }
+
+        img {
+            max-width: 700px;
+        }
+    }
+}

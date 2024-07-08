@@ -70,6 +70,31 @@ a:link, a:visited, a:active {
   min-height: 450px;
   align-content: center; }
 
+.carouselElement {
+  text-align: center;
+  width: 100%;
+  overflow: hidden; }
+  .carouselElementContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; }
+    .carouselElementContainer::-webkit-scrollbar {
+      display: none; }
+  .carouselElementCard {
+    min-width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-right: 3rem; }
+    @media (min-width: 992px) {
+      .carouselElementCard {
+        min-width: auto;
+        margin-right: 1rem; } }
+    @media (min-width: 992px) {
+      .carouselElementCard .card {
+        width: 100% !important; } }
+    .carouselElementCard img {
+      max-width: 700px; }
+
 /* INICIO DE ESTILOS DE HEADER */
 .icons {
   text-align: center; }
@@ -282,6 +307,46 @@ a:link, a:visited, a:active {
     margin: 1rem 0rem; }
 
 /* FIN DE DOBLE SECCIÓN PUBLICIDAD Y NEWSLATTER */
+.logoDesplazamientoMobile {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 1s forwards 1s; }
+  @media (min-width: 992px) {
+    .logoDesplazamientoMobile {
+      display: none; } }
+  .logoDesplazamientoMobile img {
+    max-width: 100%;
+    max-height: 100%; }
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden; } }
+.containerIngresos {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards 1.5s;
+  margin: 0rem 1.5rem;
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 992px) {
+    .containerIngresos {
+      opacity: 1;
+      display: block;
+      margin: 0rem 5rem;
+      padding: 3rem 0rem; } }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; } }
 .experience {
   margin: 0rem 1.5rem; }
   @media (min-width: 992px) {
