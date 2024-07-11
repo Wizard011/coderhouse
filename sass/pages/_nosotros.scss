@@ -1,8 +1,18 @@
-.nostros{
+.nosotros{
     margin: $marginMobile;
     padding: 1rem 0rem;
 
     @media (min-width: 992px) {
         margin: $marginDesktop;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 2rem 0rem;
+    }
+
+    &Cierre {
+        margin: 5rem 0rem;
+        text-align: center;
     }
 }

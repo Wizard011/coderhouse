@@ -404,11 +404,17 @@ a:link, a:visited, a:active {
   .novedadesInfo {
     text-align: justify; }
 
-.nostros {
+.nosotros {
   margin: 0rem 1.5rem;
   padding: 1rem 0rem; }
   @media (min-width: 992px) {
-    .nostros {
+    .nosotros {
       margin: 0rem 5rem; } }
+  .nosotros h2 {
+    text-align: center;
+    margin: 2rem 0rem; }
+  .nosotrosCierre {
+    margin: 5rem 0rem;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
